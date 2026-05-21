@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+
+p {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 20px;
+}
+
+.bemvindo {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 25px;
+}
+
+#titulo-clinica {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(80, 121, 145);
+    font-size: 25px;
+}
+
+#serviços {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 20px;
+}
+
+#medicos {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 20px;
+}
+
+#aviso {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 20px;
+}
+
+.depoimento {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(52, 75, 113);
+    font-size: 20px;
+}
+
+.medico {
+    font-family: 'Jim Nightshade', cursive;
+    color: rgb(104, 211, 213);
+    font-size: 20px;
+}
+
+
+
