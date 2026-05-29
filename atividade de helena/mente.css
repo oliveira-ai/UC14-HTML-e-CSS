@@ -1,0 +1,125 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --cor-fundo: linear-gradient(135deg, #104893, #bfdbfe, #93c5fd);
+
+  --cor-card: rgba(63, 118, 222, 0.75);
+
+  --cor-primaria: #2563eb;
+
+  --cor-secundaria: #0b4893;
+
+  --cor-texto: #1e3b8a80;
+
+  --cor-texto-suave: #081c38;
+}
+
+
+body{
+  font-family: Arial, sans-serif;
+
+  background: var(--cor-fundo);
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+.card{
+  width: 900px;
+
+  background: var(--cor-card);
+
+  border-radius: 28px;
+
+  padding: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  box-shadow: 0 10px 30px rgba(37,99,235,0.2);
+}
+
+
+.card img{
+  width: 340px;
+
+  border-radius: 24px;
+}
+
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.titulo{
+  font-size: 46px;
+
+  color: var(--cor-primaria);
+}
+
+
+.descricao{
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: var(--cor-texto-suave);
+}
+
+.botoes{
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 10px;
+}
+
+.botao{
+  padding: 14px 26px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.ouvir{
+  background: var(--cor-primaria);
+
+  color: white;
+}
+
+.playlist{
+  background: #e0f2fe;
+
+  color: var(--cor-primaria);
+}
+
+.botao:hover{
+  transform: scale(1.05);
+
+  opacity: 0.9;
+}
