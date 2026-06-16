@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botão.css">
+    <title>Botãozinho animado</title>
+</head>
+<body>
+    
+    <style>
+        /* Animação */
+        @keyframes moverBotao {
+            0% {
+                left: 0;
+                background-color: rgb(130, 77, 121);
+            }
+
+            50% {
+                background-color: rgb(131, 178, 175);
+            }
+
+            100% {
+                left: 300px;
+                background-color: rgb(160, 63, 107);
+            }
+        }
+
+        /* Estilo do botão */
+        button {
+            position: relative;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 11px;
+            cursor: pointer;
+
+            /* Aplicação da animação */
+            animation: moverBotao 1s infinite alternate;
+        }
+    </style>
+
+    <button>Tente clicar</button>
+
+</body>
+</html>
