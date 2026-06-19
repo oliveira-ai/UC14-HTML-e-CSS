@@ -1,0 +1,137 @@
+/* --- Variáveis de Tema Sóbrio/Premium --- */
+:root {
+    --bg-black: #0a0a0a;
+    --bg-dark: #121212;
+    --gold: #D4AF37; /* Dourado metálico */
+    --gold-hover: #b5952f;
+    --text-light: #e0e0e0;
+    --text-white: #ffffff;
+    --font-title: 'Cinzel', serif; /* Fonte clássica de luxo */
+    --font-text: 'Montserrat', sans-serif; /* Fonte limpa e moderna */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--font-text);
+    color: var(--text-light);
+    background-color: var(--bg-black);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container { width: 85%; max-width: 1200px; margin: 0 auto; }
+.section { padding: 100px 0; }
+.bg-dark { background-color: var(--bg-dark); }
+.bg-black { background-color: var(--bg-black); }
+
+/* --- Títulos e Botões --- */
+.section-title {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: var(--text-white);
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+.section-title::after {
+    content: ''; display: block; width: 50px; height: 2px;
+    background-color: var(--gold); margin: 20px auto 0;
+}
+
+.btn {
+    display: inline-block; padding: 15px 40px;
+    background-color: transparent; border: 1px solid var(--gold);
+    color: var(--gold); text-decoration: none; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;
+    transition: all 0.4s ease; cursor: pointer;
+}
+.btn:hover { background-color: var(--gold); color: var(--bg-black); }
+
+/* --- Cabeçalho (Header) --- */
+.header {
+    background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    position: fixed; width: 100%; top: 0; z-index: 1000; transition: 0.3s;
+}
+.header .container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+.logo h1 { font-family: var(--font-title); font-size: 1.6rem; color: var(--text-white); font-weight: 400; }
+.logo span { color: var(--gold); font-size: 1rem; display: block; letter-spacing: 4px; }
+.nav-menu ul { list-style: none; display: flex; }
+.nav-menu ul li { margin-left: 35px; }
+.nav-menu ul li a { text-decoration: none; color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+.nav-menu ul li a:hover { color: var(--gold); }
+
+/* --- Hero Section com Fundo Animado (Slideshow CSS) --- */
+.hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+
+/* Imagens do Slideshow */
+.hero-slideshow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: fadeSlides 15s infinite; }
+/* Imagens Jurídicas do Unsplash */
+.slide-1 { background-image: url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); }
+.slide-2 { background-image: url('https://images.unsplash.com/photo-1505664177922-928abce32fb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); animation-delay: 5s; }
+.slide-3 { background-image: url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); animation-delay: 10s; }
+
+@keyframes fadeSlides {
+    0% { opacity: 0; transform: scale(1.05); }
+    10% { opacity: 1; transform: scale(1); }
+    33% { opacity: 1; transform: scale(1); }
+    43% { opacity: 0; transform: scale(1.05); }
+    100% { opacity: 0; }
+}
+
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,0.9)); z-index: 2; }
+.hero-content { position: relative; z-index: 3; max-width: 900px; padding: 0 20px; }
+.hero h2 { font-family: var(--font-title); font-size: 4rem; margin-bottom: 25px; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); line-height: 1.2; }
+.hero p { font-size: 1.3rem; margin-bottom: 50px; color: #ccc; font-weight: 300; }
+
+/* --- Áreas de Atuação --- */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.service-card { background-color: #1a1a1a; padding: 50px 40px; border: 1px solid #333; transition: all 0.4s ease; text-align: center; }
+.service-card:hover { border-color: var(--gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+.card-icon { font-size: 2.5rem; margin-bottom: 20px; color: var(--gold); }
+.service-card h3 { font-family: var(--font-title); color: var(--text-white); font-size: 1.5rem; margin-bottom: 15px; }
+
+/* --- O Escritório --- */
+.about-content { max-width: 800px; margin: 0 auto; text-align: center; }
+.about-content p { font-size: 1.2rem; margin-bottom: 20px; color: #aaa; font-weight: 300; }
+.about-content strong { color: var(--gold); font-weight: 600; }
+
+/* --- EQUIPE COM ANIMAÇÕES (NOVIDADE) --- */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.team-card { position: relative; overflow: hidden; cursor: pointer; border-bottom: 3px solid var(--gold); }
+.team-image { position: relative; height: 450px; overflow: hidden; }
+.team-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: grayscale(100%); }
+.team-card:hover img { transform: scale(1.08); filter: grayscale(0%); }
+
+/* Tarja com o nome do advogado que desliza para cima */
+.team-info { position: absolute; bottom: -100px; left: 0; width: 100%; background: rgba(10, 10, 10, 0.9); padding: 25px 20px; transition: bottom 0.4s ease, background 0.4s ease; text-align: center; border-top: 1px solid var(--gold); }
+.team-card:hover .team-info { bottom: 0; }
+.team-info h4 { font-family: var(--font-title); color: var(--gold); font-size: 1.3rem; margin-bottom: 5px; }
+.team-info span { font-size: 0.85rem; color: #ccc; text-transform: uppercase; letter-spacing: 1px; }
+
+/* --- Rodapé --- */
+.footer { border-top: 1px solid #222; padding: 80px 0 30px; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; border-bottom: 1px solid #222; padding-bottom: 50px; margin-bottom: 30px; }
+.footer-info h3 { font-family: var(--font-title); color: var(--text-white); font-size: 2rem; margin-bottom: 0px; }
+.footer-info p { color: var(--gold); font-family: var(--font-title); font-size: 1.2rem; letter-spacing: 3px;}
+.footer-contact h4 { font-family: var(--font-title); margin-bottom: 20px; font-size: 1.2rem; color: var(--gold); }
+.footer-contact p { margin-bottom: 15px; color: #888; font-size: 0.9rem; }
+.footer-bottom { text-align: center; color: #555; font-size: 0.85rem; }
+
+/* --- Classes para Animação de Rolagem (Javascript) --- */
+.reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s ease-out; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    .header .container { flex-direction: column; justify-content: center; height: auto; padding: 20px 0; }
+    .nav-menu ul { margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+    .nav-menu ul li { margin: 10px 15px; }
+    .hero h2 { font-size: 2.5rem; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    /* No mobile as infos da equipe ficam sempre visíveis */
+    .team-info { bottom: 0; }
+}
