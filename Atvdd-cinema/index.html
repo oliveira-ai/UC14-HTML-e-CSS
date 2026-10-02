@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="topbar">
+
+        <div class="brand">
+            <span class="brand-mark">C</span>
+
+            <span>
+                CINE<span>FER</span>
+            </span>
+        </div>
+
+        <div class="session">
+            SALA 07
+            <span>•</span>
+            HOJE, 20:30
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+
+            <div class="movie-info">
+
+                <div class="poster">
+
+                    <div class="poster-content">
+
+                        <small>UMA EXPERIÊNCIA</small>
+
+                        <strong>
+                            NO<br>
+                            ESCURECER
+                        </strong>
+
+                        <em>DO CINEMA</em>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <p class="eyebrow">
+                        FILME EM EXIBIÇÃO
+                    </p>
+
+                    <h1>
+                        O Último Horizonte
+                    </h1>
+
+                    <p class="description">
+                        Uma aventura cinematográfica sobre coragem,
+                        escolhas e o desconhecido.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>12 ANOS</span>
+                        <span>2H 08MIN</span>
+                        <span>DRAMA • AVENTURA</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="showtime">
+
+                <span>SESSÃO</span>
+
+                <strong>
+                    20:30
+                </strong>
+
+                <small>
+                    SEX • 02 OUT
+                </small>
+
+            </div>
+
+        </section>
+
+        <section class="booking">
+
+
+            <!-- MAPA DA SALA -->
+            <div class="room">
+
+                <!-- TELA -->
+                <div class="screen-wrap">
+
+                    <div class="screen">
+                        TELA
+                    </div>
+
+                </div>
+
+
+                <!-- LEGENDA -->
+                <div class="legend">
+
+                    <span>
+                        <i class="available"></i>
+                        Disponível
+                    </span>
+
+                    <span>
+                        <i class="selected"></i>
+                        Selecionado
+                    </span>
+
+                    <span>
+                        <i class="occupied"></i>
+                        Ocupado
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="seatMap"
+                    class="seat-map"
+                    aria-label="Mapa de assentos">
+                </div>
+
+            </div>
+
+
+        
+            <aside class="summary">
+
+                <p class="eyebrow">
+                    SEU PEDIDO
+                </p>
+
+                <h2>
+                    Escolha seus assentos
+                </h2>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-row">
+
+                        <span>Filme</span>
+
+                        <strong>
+                            O Último Horizonte
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Sala</span>
+
+                        <strong>
+                            07 • 20:30
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Data</span>
+
+                        <strong>
+                            02/10/2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ASSENTOS ESCOLHIDOS -->
+                <div class="selected-box">
+
+                    <span>
+                        ASSENTOS SELECIONADOS
+                    </span>
+
+                    <strong id="selectedSeats">
+                        Nenhum assento
+                    </strong>
+
+                </div>
+
+
+                <!-- TOTAL -->
+                <div class="total">
+
+                    <span>
+                        <small id="ticketCount">0</small>
+                        ingresso(s)
+                    </span>
+
+                    <strong id="totalPrice">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <!-- BOTÕES -->
+                <button
+                    id="clearBtn"
+                    class="secondary">
+
+                    Limpar seleção
+
+                </button>
+
+
+                <button
+                    id="confirmBtn"
+                    class="primary">
+
+                    Continuar
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <p
+                    id="message"
+                    class="message">
+                </p>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+   
+    <footer>
+
+        © 2026 CINEWEB
+
+        <span>•</span>
+
+        Tecnologia + Cinema + Arte
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
